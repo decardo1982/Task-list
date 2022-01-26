@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../service/task.service';
 import {Task} from '../../Task'
 
-
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -17,17 +16,22 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {
     //Like Promise
-    this.taskService.getTasks().subscribe((tasks)=>(
+    this.taskService.getTasks().subscribe((tasks)=>{
       this.tasks = tasks
-    ));
+    });
   }
 
   deleteTask(task:Task){
     this.taskService.deleteTask(task)
       .subscribe(
-        () => (  
-        this.tasks = this.tasks.filter( (t) => t.id !== task.id )  
-    ))
+        () => {  
+        this.tasks = this.tasks.filter(
+          (t) => {          
+          return t.id !== task.id
+      }
+      )
+    }
+    )
   }
 
 }
