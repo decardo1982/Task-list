@@ -1,40 +1,16 @@
 {
   "tasks": [
     {
-      "text": "Terminar primer modulo de Angular",
-      "day": "Agosto 5 a las 12:00",
+      "text": "Ver módulo 9",
+      "day": "hoy",
       "reminder": false,
       "id": 1
     },
     {
-      "text": "Hacer las compras para la cena",
-      "day": "Agosto 5 a las 17:00",
-      "reminder": false,
-      "id": 2
-    },
-    {
-      "text": "Investigar sobre Bootstrap",
-      "day": "Agosto 5 a las 19:00",
-      "reminder": false,
-      "id": 3
-    },
-    {
-      "text": "Ponerme a llorar porque no me sale",
-      "day": "Ahora",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Nueva tarea",
-      "day": "Mañana",
-      "reminder": false,
-      "id": 5
-    },
-    {
-      "text": "Levantarse temprano",
-      "day": "a las 05:30",
+      "text": "Ir a la feria del libro",
+      "day": "sábado 16",
       "reminder": true,
-      "id": 6
+      "id": 2
     }
   ]
 }
